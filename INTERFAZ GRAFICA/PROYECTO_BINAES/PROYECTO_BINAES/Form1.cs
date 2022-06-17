@@ -52,6 +52,9 @@ namespace PROYECTO_BINAES
             this.WindowState=FormWindowState.Minimized;
         }
 
+        private void picLogo_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
