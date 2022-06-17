@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -53,7 +54,12 @@
             this.btnInicioDeSesion = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelNoticias = new System.Windows.Forms.Panel();
+            this.picImagenes = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -61,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -162,7 +170,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(0, 502);
+            this.panel7.Location = new System.Drawing.Point(1, 522);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(5, 32);
             this.panel7.TabIndex = 10;
@@ -182,7 +190,7 @@
             this.btnRedesSociales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedesSociales.ForeColor = System.Drawing.Color.White;
             this.btnRedesSociales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRedesSociales.Location = new System.Drawing.Point(3, 502);
+            this.btnRedesSociales.Location = new System.Drawing.Point(3, 522);
             this.btnRedesSociales.Name = "btnRedesSociales";
             this.btnRedesSociales.Size = new System.Drawing.Size(219, 32);
             this.btnRedesSociales.TabIndex = 12;
@@ -196,7 +204,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-5, 502);
+            this.button6.Location = new System.Drawing.Point(-5, 522);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(219, 32);
             this.button6.TabIndex = 12;
@@ -206,7 +214,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(-2, 441);
+            this.panel5.Location = new System.Drawing.Point(1, 461);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 32);
             this.panel5.TabIndex = 9;
@@ -218,7 +226,7 @@
             this.btnEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventos.ForeColor = System.Drawing.Color.White;
             this.btnEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEventos.Location = new System.Drawing.Point(-2, 441);
+            this.btnEventos.Location = new System.Drawing.Point(-2, 461);
             this.btnEventos.Name = "btnEventos";
             this.btnEventos.Size = new System.Drawing.Size(219, 32);
             this.btnEventos.TabIndex = 10;
@@ -228,7 +236,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(-2, 382);
+            this.panel4.Location = new System.Drawing.Point(1, 402);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 32);
             this.panel4.TabIndex = 7;
@@ -240,7 +248,7 @@
             this.btnAreas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAreas.ForeColor = System.Drawing.Color.White;
             this.btnAreas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAreas.Location = new System.Drawing.Point(-2, 382);
+            this.btnAreas.Location = new System.Drawing.Point(-2, 402);
             this.btnAreas.Name = "btnAreas";
             this.btnAreas.Size = new System.Drawing.Size(219, 32);
             this.btnAreas.TabIndex = 8;
@@ -250,7 +258,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(-2, 324);
+            this.panel3.Location = new System.Drawing.Point(1, 344);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 5;
@@ -262,7 +270,7 @@
             this.btnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCatalogo.ForeColor = System.Drawing.Color.White;
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCatalogo.Location = new System.Drawing.Point(-2, 324);
+            this.btnCatalogo.Location = new System.Drawing.Point(-2, 344);
             this.btnCatalogo.Name = "btnCatalogo";
             this.btnCatalogo.Size = new System.Drawing.Size(219, 32);
             this.btnCatalogo.TabIndex = 6;
@@ -272,7 +280,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(-2, 266);
+            this.panel2.Location = new System.Drawing.Point(0, 286);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 32);
             this.panel2.TabIndex = 3;
@@ -284,7 +292,7 @@
             this.btnServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnServicios.ForeColor = System.Drawing.Color.White;
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnServicios.Location = new System.Drawing.Point(-2, 266);
+            this.btnServicios.Location = new System.Drawing.Point(-2, 286);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Size = new System.Drawing.Size(219, 32);
             this.btnServicios.TabIndex = 4;
@@ -294,7 +302,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(0, 204);
+            this.panel1.Location = new System.Drawing.Point(0, 224);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 32);
             this.panel1.TabIndex = 1;
@@ -306,7 +314,7 @@
             this.btnNosotros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNosotros.ForeColor = System.Drawing.Color.White;
             this.btnNosotros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNosotros.Location = new System.Drawing.Point(0, 204);
+            this.btnNosotros.Location = new System.Drawing.Point(0, 224);
             this.btnNosotros.Name = "btnNosotros";
             this.btnNosotros.Size = new System.Drawing.Size(219, 32);
             this.btnNosotros.TabIndex = 2;
@@ -316,7 +324,7 @@
             // panelDecoracionMenu
             // 
             this.panelDecoracionMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panelDecoracionMenu.Location = new System.Drawing.Point(0, 137);
+            this.panelDecoracionMenu.Location = new System.Drawing.Point(0, 157);
             this.panelDecoracionMenu.Name = "panelDecoracionMenu";
             this.panelDecoracionMenu.Size = new System.Drawing.Size(5, 32);
             this.panelDecoracionMenu.TabIndex = 0;
@@ -328,7 +336,7 @@
             this.btnInicioDeSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioDeSesion.ForeColor = System.Drawing.Color.White;
             this.btnInicioDeSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicioDeSesion.Location = new System.Drawing.Point(0, 137);
+            this.btnInicioDeSesion.Location = new System.Drawing.Point(0, 157);
             this.btnInicioDeSesion.Name = "btnInicioDeSesion";
             this.btnInicioDeSesion.Size = new System.Drawing.Size(219, 32);
             this.btnInicioDeSesion.TabIndex = 0;
@@ -348,12 +356,53 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panelContenedor.BackColor = System.Drawing.Color.White;
+            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.panelNoticias);
+            this.panelContenedor.Controls.Add(this.picImagenes);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(220, 38);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1080, 612);
             this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(904, 599);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "0";
+            // 
+            // panelNoticias
+            // 
+            this.panelNoticias.BackColor = System.Drawing.Color.White;
+            this.panelNoticias.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNoticias.Location = new System.Drawing.Point(923, 0);
+            this.panelNoticias.Name = "panelNoticias";
+            this.panelNoticias.Size = new System.Drawing.Size(157, 612);
+            this.panelNoticias.TabIndex = 1;
+            // 
+            // picImagenes
+            // 
+            this.picImagenes.Image = ((System.Drawing.Image)(resources.GetObject("picImagenes.Image")));
+            this.picImagenes.Location = new System.Drawing.Point(0, 0);
+            this.picImagenes.Name = "picImagenes";
+            this.picImagenes.Size = new System.Drawing.Size(925, 612);
+            this.picImagenes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImagenes.TabIndex = 0;
+            this.picImagenes.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tag = "";
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // tmrImagenes
+            // 
+            this.tmrImagenes.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmInicio
             // 
@@ -375,6 +424,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelMenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,7 +440,6 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel panelMenuVertical;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnInicioDeSesion;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Panel panelDecoracionMenu;
@@ -406,6 +457,12 @@
         private System.Windows.Forms.Button btnServicios;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNosotros;
+        private System.Windows.Forms.Panel panelNoticias;
+        private System.Windows.Forms.PictureBox picImagenes;
+        private System.Windows.Forms.Timer timer1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer tmrImagenes;
     }
 }
 
