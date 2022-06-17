@@ -68,13 +68,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
             this.panel8 = new System.Windows.Forms.Panel();
-            this.picIniciarSesion = new System.Windows.Forms.PictureBox();
-            this.picNosotros = new System.Windows.Forms.PictureBox();
-            this.picServicios = new System.Windows.Forms.PictureBox();
-            this.picCatalogo = new System.Windows.Forms.PictureBox();
-            this.picAreas = new System.Windows.Forms.PictureBox();
-            this.picEventos = new System.Windows.Forms.PictureBox();
-            this.picRedesSociales = new System.Windows.Forms.PictureBox();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -85,13 +78,6 @@
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIniciarSesion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNosotros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picServicios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCatalogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAreas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEventos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRedesSociales)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -167,13 +153,6 @@
             // panelMenuVertical
             // 
             this.panelMenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panelMenuVertical.Controls.Add(this.picRedesSociales);
-            this.panelMenuVertical.Controls.Add(this.picEventos);
-            this.panelMenuVertical.Controls.Add(this.picAreas);
-            this.panelMenuVertical.Controls.Add(this.picCatalogo);
-            this.panelMenuVertical.Controls.Add(this.picServicios);
-            this.panelMenuVertical.Controls.Add(this.picNosotros);
-            this.panelMenuVertical.Controls.Add(this.picIniciarSesion);
             this.panelMenuVertical.Controls.Add(this.panel7);
             this.panelMenuVertical.Controls.Add(this.panel6);
             this.panelMenuVertical.Controls.Add(this.btnRedesSociales);
@@ -219,10 +198,11 @@
             this.btnRedesSociales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnRedesSociales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedesSociales.ForeColor = System.Drawing.Color.White;
+            this.btnRedesSociales.Image = ((System.Drawing.Image)(resources.GetObject("btnRedesSociales.Image")));
             this.btnRedesSociales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRedesSociales.Location = new System.Drawing.Point(50, 522);
+            this.btnRedesSociales.Location = new System.Drawing.Point(4, 522);
             this.btnRedesSociales.Name = "btnRedesSociales";
-            this.btnRedesSociales.Size = new System.Drawing.Size(170, 32);
+            this.btnRedesSociales.Size = new System.Drawing.Size(216, 32);
             this.btnRedesSociales.TabIndex = 12;
             this.btnRedesSociales.Text = "REDES SOCIALES";
             this.btnRedesSociales.UseVisualStyleBackColor = true;
@@ -255,10 +235,11 @@
             this.btnEventos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventos.ForeColor = System.Drawing.Color.White;
+            this.btnEventos.Image = ((System.Drawing.Image)(resources.GetObject("btnEventos.Image")));
             this.btnEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEventos.Location = new System.Drawing.Point(50, 461);
+            this.btnEventos.Location = new System.Drawing.Point(4, 461);
             this.btnEventos.Name = "btnEventos";
-            this.btnEventos.Size = new System.Drawing.Size(170, 32);
+            this.btnEventos.Size = new System.Drawing.Size(216, 32);
             this.btnEventos.TabIndex = 10;
             this.btnEventos.Text = "EVENTOS";
             this.btnEventos.UseVisualStyleBackColor = true;
@@ -277,10 +258,11 @@
             this.btnAreas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnAreas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAreas.ForeColor = System.Drawing.Color.White;
+            this.btnAreas.Image = ((System.Drawing.Image)(resources.GetObject("btnAreas.Image")));
             this.btnAreas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAreas.Location = new System.Drawing.Point(50, 402);
+            this.btnAreas.Location = new System.Drawing.Point(4, 402);
             this.btnAreas.Name = "btnAreas";
-            this.btnAreas.Size = new System.Drawing.Size(170, 32);
+            this.btnAreas.Size = new System.Drawing.Size(216, 32);
             this.btnAreas.TabIndex = 8;
             this.btnAreas.Text = "AREAS";
             this.btnAreas.UseVisualStyleBackColor = true;
@@ -299,10 +281,11 @@
             this.btnCatalogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCatalogo.ForeColor = System.Drawing.Color.White;
+            this.btnCatalogo.Image = ((System.Drawing.Image)(resources.GetObject("btnCatalogo.Image")));
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCatalogo.Location = new System.Drawing.Point(50, 344);
+            this.btnCatalogo.Location = new System.Drawing.Point(4, 344);
             this.btnCatalogo.Name = "btnCatalogo";
-            this.btnCatalogo.Size = new System.Drawing.Size(170, 32);
+            this.btnCatalogo.Size = new System.Drawing.Size(216, 32);
             this.btnCatalogo.TabIndex = 6;
             this.btnCatalogo.Text = "CATALOGO";
             this.btnCatalogo.UseVisualStyleBackColor = true;
@@ -321,10 +304,11 @@
             this.btnServicios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnServicios.ForeColor = System.Drawing.Color.White;
+            this.btnServicios.Image = ((System.Drawing.Image)(resources.GetObject("btnServicios.Image")));
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnServicios.Location = new System.Drawing.Point(50, 286);
+            this.btnServicios.Location = new System.Drawing.Point(4, 286);
             this.btnServicios.Name = "btnServicios";
-            this.btnServicios.Size = new System.Drawing.Size(170, 32);
+            this.btnServicios.Size = new System.Drawing.Size(216, 32);
             this.btnServicios.TabIndex = 4;
             this.btnServicios.Text = "SERVICIOS";
             this.btnServicios.UseVisualStyleBackColor = true;
@@ -343,10 +327,11 @@
             this.btnNosotros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnNosotros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNosotros.ForeColor = System.Drawing.Color.White;
+            this.btnNosotros.Image = ((System.Drawing.Image)(resources.GetObject("btnNosotros.Image")));
             this.btnNosotros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNosotros.Location = new System.Drawing.Point(50, 224);
+            this.btnNosotros.Location = new System.Drawing.Point(4, 224);
             this.btnNosotros.Name = "btnNosotros";
-            this.btnNosotros.Size = new System.Drawing.Size(170, 32);
+            this.btnNosotros.Size = new System.Drawing.Size(216, 32);
             this.btnNosotros.TabIndex = 2;
             this.btnNosotros.Text = "NOSOTROS";
             this.btnNosotros.UseVisualStyleBackColor = true;
@@ -365,10 +350,11 @@
             this.btnInicioDeSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnInicioDeSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioDeSesion.ForeColor = System.Drawing.Color.White;
+            this.btnInicioDeSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnInicioDeSesion.Image")));
             this.btnInicioDeSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicioDeSesion.Location = new System.Drawing.Point(49, 157);
+            this.btnInicioDeSesion.Location = new System.Drawing.Point(4, 157);
             this.btnInicioDeSesion.Name = "btnInicioDeSesion";
-            this.btnInicioDeSesion.Size = new System.Drawing.Size(170, 32);
+            this.btnInicioDeSesion.Size = new System.Drawing.Size(215, 32);
             this.btnInicioDeSesion.TabIndex = 0;
             this.btnInicioDeSesion.Text = "INICIAR SESION";
             this.btnInicioDeSesion.UseVisualStyleBackColor = true;
@@ -529,76 +515,6 @@
             this.panel8.Size = new System.Drawing.Size(1080, 30);
             this.panel8.TabIndex = 10;
             // 
-            // picIniciarSesion
-            // 
-            this.picIniciarSesion.Image = ((System.Drawing.Image)(resources.GetObject("picIniciarSesion.Image")));
-            this.picIniciarSesion.Location = new System.Drawing.Point(12, 157);
-            this.picIniciarSesion.Name = "picIniciarSesion";
-            this.picIniciarSesion.Size = new System.Drawing.Size(31, 32);
-            this.picIniciarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picIniciarSesion.TabIndex = 13;
-            this.picIniciarSesion.TabStop = false;
-            // 
-            // picNosotros
-            // 
-            this.picNosotros.Image = ((System.Drawing.Image)(resources.GetObject("picNosotros.Image")));
-            this.picNosotros.Location = new System.Drawing.Point(14, 225);
-            this.picNosotros.Name = "picNosotros";
-            this.picNosotros.Size = new System.Drawing.Size(31, 32);
-            this.picNosotros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picNosotros.TabIndex = 14;
-            this.picNosotros.TabStop = false;
-            // 
-            // picServicios
-            // 
-            this.picServicios.Image = ((System.Drawing.Image)(resources.GetObject("picServicios.Image")));
-            this.picServicios.Location = new System.Drawing.Point(14, 287);
-            this.picServicios.Name = "picServicios";
-            this.picServicios.Size = new System.Drawing.Size(31, 32);
-            this.picServicios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picServicios.TabIndex = 15;
-            this.picServicios.TabStop = false;
-            // 
-            // picCatalogo
-            // 
-            this.picCatalogo.Image = ((System.Drawing.Image)(resources.GetObject("picCatalogo.Image")));
-            this.picCatalogo.Location = new System.Drawing.Point(14, 345);
-            this.picCatalogo.Name = "picCatalogo";
-            this.picCatalogo.Size = new System.Drawing.Size(31, 32);
-            this.picCatalogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCatalogo.TabIndex = 16;
-            this.picCatalogo.TabStop = false;
-            // 
-            // picAreas
-            // 
-            this.picAreas.Image = ((System.Drawing.Image)(resources.GetObject("picAreas.Image")));
-            this.picAreas.Location = new System.Drawing.Point(13, 403);
-            this.picAreas.Name = "picAreas";
-            this.picAreas.Size = new System.Drawing.Size(31, 32);
-            this.picAreas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAreas.TabIndex = 17;
-            this.picAreas.TabStop = false;
-            // 
-            // picEventos
-            // 
-            this.picEventos.Image = ((System.Drawing.Image)(resources.GetObject("picEventos.Image")));
-            this.picEventos.Location = new System.Drawing.Point(14, 462);
-            this.picEventos.Name = "picEventos";
-            this.picEventos.Size = new System.Drawing.Size(31, 32);
-            this.picEventos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEventos.TabIndex = 18;
-            this.picEventos.TabStop = false;
-            // 
-            // picRedesSociales
-            // 
-            this.picRedesSociales.Image = ((System.Drawing.Image)(resources.GetObject("picRedesSociales.Image")));
-            this.picRedesSociales.Location = new System.Drawing.Point(13, 523);
-            this.picRedesSociales.Name = "picRedesSociales";
-            this.picRedesSociales.Size = new System.Drawing.Size(31, 32);
-            this.picRedesSociales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picRedesSociales.TabIndex = 19;
-            this.picRedesSociales.TabStop = false;
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,7 +526,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BINAES";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
@@ -624,13 +539,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIniciarSesion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNosotros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picServicios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCatalogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAreas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEventos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRedesSociales)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -675,13 +583,6 @@
         private System.Windows.Forms.RadioButton radImagen2;
         private System.Windows.Forms.RadioButton radImagen1;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox picIniciarSesion;
-        private System.Windows.Forms.PictureBox picRedesSociales;
-        private System.Windows.Forms.PictureBox picEventos;
-        private System.Windows.Forms.PictureBox picAreas;
-        private System.Windows.Forms.PictureBox picCatalogo;
-        private System.Windows.Forms.PictureBox picServicios;
-        private System.Windows.Forms.PictureBox picNosotros;
     }
 }
 
