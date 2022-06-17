@@ -12,7 +12,8 @@ namespace PROYECTO_BINAES
 {
     public partial class frmInicio : Form
     {
-        private int tiempo; //variable de conteo de valores
+        private int tiempo = -1; //variable de conteo de valores
+        private int numImagen = 0;
         public frmInicio()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace PROYECTO_BINAES
         private void frmInicio_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            
         }
 
         private void panelBarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -67,43 +69,87 @@ namespace PROYECTO_BINAES
         private void timer1_Tick(object sender, EventArgs e)
         {
             tiempo++;
-            label1.Text = tiempo.ToString();
+            label1.Text = tiempo.ToString() +"/"+ numImagen.ToString();
 
-            if (label1.Text == "200")
-            {
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA2.jpg";
-            }
 
-            if (label1.Text == "400")
-            {
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA3.jpg";
-            }
 
-            if (label1.Text == "600")
+            if ((tiempo+100)%100==0)
             {
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA4.jpg";
-            }
-
-            if (label1.Text == "800")
-            {
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA5.jpg";
-            }
-
-            if (label1.Text == "1000")
-            {
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA6.jpg";
-            }
-
-            if (label1.Text == "1200")
-            {
-                timer1.Enabled=false;
-                picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA7.jpg";
-                tiempo = 0;
-                label1.Text = "0";
-                timer1.Start();
+               
+                if (numImagen<7)
+                {
+                    numImagen++;
+                }
+                else
+                {
+                    numImagen = 1;
+                }
+                this.CheckBot(numImagen);
 
             }
 
+
+        }
+
+        private void CheckBot(int posicion)
+        {
+            radImagen1.Checked = posicion == 1;
+            radImagen2.Checked = posicion == 2;
+            radImagen3.Checked = posicion == 3;
+            radImagen4.Checked = posicion == 4;
+            radImagen5.Checked = posicion == 5;
+            radImagen6.Checked = posicion == 6;
+            radImagen7.Checked = posicion == 7;
+
+        }
+
+        private void radImagen1_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA1.jpg";
+            numImagen = 1;
+            tiempo = 0;
+        }
+
+        private void radImagen2_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA2.jpg";
+            numImagen = 2;
+            tiempo = 0;
+        }
+
+        private void radImagen3_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA3.jpg";
+            numImagen = 3;
+            tiempo = 0;
+        }
+
+        private void radImagen4_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA4.jpg";
+            numImagen = 4;
+            tiempo = 0;
+        }
+
+        private void radImagen5_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA5.jpg";
+            numImagen = 5;
+            tiempo = 0;
+        }
+
+        private void radImagen6_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA6.jpg";
+            numImagen = 6;
+            tiempo = 0;
+        }
+
+        private void radImagen7_CheckedChanged(object sender, EventArgs e)
+        {
+            picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA7.jpg";
+            numImagen = 7;
+            tiempo = 0;
         }
 
 

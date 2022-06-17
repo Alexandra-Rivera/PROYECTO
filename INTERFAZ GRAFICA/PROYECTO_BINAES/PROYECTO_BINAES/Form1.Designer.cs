@@ -54,6 +54,13 @@
             this.btnInicioDeSesion = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.radImagen7 = new System.Windows.Forms.RadioButton();
+            this.radImagen6 = new System.Windows.Forms.RadioButton();
+            this.radImagen5 = new System.Windows.Forms.RadioButton();
+            this.radImagen4 = new System.Windows.Forms.RadioButton();
+            this.radImagen3 = new System.Windows.Forms.RadioButton();
+            this.radImagen2 = new System.Windows.Forms.RadioButton();
+            this.radImagen1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelNoticias = new System.Windows.Forms.Panel();
             this.picImagenes = new System.Windows.Forms.PictureBox();
@@ -357,6 +364,13 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.White;
+            this.panelContenedor.Controls.Add(this.radImagen7);
+            this.panelContenedor.Controls.Add(this.radImagen6);
+            this.panelContenedor.Controls.Add(this.radImagen5);
+            this.panelContenedor.Controls.Add(this.radImagen4);
+            this.panelContenedor.Controls.Add(this.radImagen3);
+            this.panelContenedor.Controls.Add(this.radImagen2);
+            this.panelContenedor.Controls.Add(this.radImagen1);
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.panelNoticias);
             this.panelContenedor.Controls.Add(this.picImagenes);
@@ -367,6 +381,79 @@
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+            // radImagen7
+            // 
+            this.radImagen7.AutoSize = true;
+            this.radImagen7.Location = new System.Drawing.Point(569, 587);
+            this.radImagen7.Name = "radImagen7";
+            this.radImagen7.Size = new System.Drawing.Size(14, 13);
+            this.radImagen7.TabIndex = 9;
+            this.radImagen7.UseVisualStyleBackColor = true;
+            this.radImagen7.CheckedChanged += new System.EventHandler(this.radImagen7_CheckedChanged);
+            // 
+            // radImagen6
+            // 
+            this.radImagen6.AutoSize = true;
+            this.radImagen6.Location = new System.Drawing.Point(533, 587);
+            this.radImagen6.Name = "radImagen6";
+            this.radImagen6.Size = new System.Drawing.Size(14, 13);
+            this.radImagen6.TabIndex = 8;
+            this.radImagen6.UseVisualStyleBackColor = true;
+            this.radImagen6.CheckedChanged += new System.EventHandler(this.radImagen6_CheckedChanged);
+            // 
+            // radImagen5
+            // 
+            this.radImagen5.AutoSize = true;
+            this.radImagen5.Location = new System.Drawing.Point(494, 587);
+            this.radImagen5.Name = "radImagen5";
+            this.radImagen5.Size = new System.Drawing.Size(14, 13);
+            this.radImagen5.TabIndex = 7;
+            this.radImagen5.UseVisualStyleBackColor = true;
+            this.radImagen5.CheckedChanged += new System.EventHandler(this.radImagen5_CheckedChanged);
+            // 
+            // radImagen4
+            // 
+            this.radImagen4.AutoSize = true;
+            this.radImagen4.Location = new System.Drawing.Point(453, 587);
+            this.radImagen4.Name = "radImagen4";
+            this.radImagen4.Size = new System.Drawing.Size(14, 13);
+            this.radImagen4.TabIndex = 6;
+            this.radImagen4.UseVisualStyleBackColor = true;
+            this.radImagen4.CheckedChanged += new System.EventHandler(this.radImagen4_CheckedChanged);
+            // 
+            // radImagen3
+            // 
+            this.radImagen3.AutoSize = true;
+            this.radImagen3.Location = new System.Drawing.Point(413, 587);
+            this.radImagen3.Name = "radImagen3";
+            this.radImagen3.Size = new System.Drawing.Size(14, 13);
+            this.radImagen3.TabIndex = 5;
+            this.radImagen3.UseVisualStyleBackColor = true;
+            this.radImagen3.CheckedChanged += new System.EventHandler(this.radImagen3_CheckedChanged);
+            // 
+            // radImagen2
+            // 
+            this.radImagen2.AutoSize = true;
+            this.radImagen2.Location = new System.Drawing.Point(377, 587);
+            this.radImagen2.Name = "radImagen2";
+            this.radImagen2.Size = new System.Drawing.Size(14, 13);
+            this.radImagen2.TabIndex = 4;
+            this.radImagen2.UseVisualStyleBackColor = true;
+            this.radImagen2.CheckedChanged += new System.EventHandler(this.radImagen2_CheckedChanged);
+            // 
+            // radImagen1
+            // 
+            this.radImagen1.AutoSize = true;
+            this.radImagen1.BackColor = System.Drawing.Color.White;
+            this.radImagen1.Checked = true;
+            this.radImagen1.Location = new System.Drawing.Point(340, 587);
+            this.radImagen1.Name = "radImagen1";
+            this.radImagen1.Size = new System.Drawing.Size(14, 13);
+            this.radImagen1.TabIndex = 3;
+            this.radImagen1.TabStop = true;
+            this.radImagen1.UseVisualStyleBackColor = false;
+            this.radImagen1.CheckedChanged += new System.EventHandler(this.radImagen1_CheckedChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -375,6 +462,7 @@
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "0";
+            this.label1.Visible = false;
             // 
             // panelNoticias
             // 
@@ -463,6 +551,13 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrImagenes;
+        private System.Windows.Forms.RadioButton radImagen7;
+        private System.Windows.Forms.RadioButton radImagen6;
+        private System.Windows.Forms.RadioButton radImagen5;
+        private System.Windows.Forms.RadioButton radImagen4;
+        private System.Windows.Forms.RadioButton radImagen3;
+        private System.Windows.Forms.RadioButton radImagen2;
+        private System.Windows.Forms.RadioButton radImagen1;
     }
 }
 
