@@ -268,7 +268,7 @@
             this.iNICIODESESIONToolStripMenuItem});
             this.mspInicioDeSesion.Location = new System.Drawing.Point(9, 165);
             this.mspInicioDeSesion.Name = "mspInicioDeSesion";
-            this.mspInicioDeSesion.Size = new System.Drawing.Size(152, 24);
+            this.mspInicioDeSesion.Size = new System.Drawing.Size(272, 24);
             this.mspInicioDeSesion.TabIndex = 12;
             this.mspInicioDeSesion.Text = "menuStrip1";
             // 
@@ -281,6 +281,7 @@
             this.iNICIODESESIONToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
             this.iNICIODESESIONToolStripMenuItem.Text = "     INICIO DE SESION";
             this.iNICIODESESIONToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iNICIODESESIONToolStripMenuItem.Click += new System.EventHandler(this.iNICIODESESIONToolStripMenuItem_Click);
             // 
             // mspNosotros
             // 
