@@ -14,8 +14,9 @@ namespace PROYECTO_BINAES
     {
         private int tiempo = -1; //variable de conteo de valores
         private int numImagen = 0;
-        private int tiempo2 = -1;
-        private int numFrase = 0;
+        private int tiempo2 = 50;
+
+
         public frmInicio()
         {
             InitializeComponent();
@@ -25,21 +26,16 @@ namespace PROYECTO_BINAES
         private void frmInicio_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            timer2.Start();
-          
-            
+            //timer2.Start();
         }
 
-        private void panelBarraTitulo_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
+        //CERRAR
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //MAXIMIZAR
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
 
@@ -48,6 +44,7 @@ namespace PROYECTO_BINAES
             btnRestaurar.Visible = true;
         }
 
+        //RESTAURAR
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -55,20 +52,12 @@ namespace PROYECTO_BINAES
             btnMaximizar.Visible = true;
         }
 
+        //MINIMIZAR
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState=FormWindowState.Minimized;
         }
 
-        private void picLogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         //IMAGENES CENTRALES
         private void timer1_Tick(object sender, EventArgs e)
@@ -96,6 +85,8 @@ namespace PROYECTO_BINAES
 
         }
 
+
+        // CHECAR POSICION
         private void CheckBot(int posicion)
         {
             radImagen1.Checked = posicion == 1;
@@ -108,6 +99,7 @@ namespace PROYECTO_BINAES
 
         }
 
+        //  BOTONES CHECK
         private void radImagen1_CheckedChanged(object sender, EventArgs e)
         {
             picImagenes.ImageLocation = Application.StartupPath + "\\RECURSOS\\BIBLIOTECA1.jpg";
@@ -159,27 +151,41 @@ namespace PROYECTO_BINAES
 
 
         //PUBLICIDAD
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            tiempo2++;
-            label2.Text = tiempo2.ToString() + "/" + numFrase.ToString();
+        //private void timer2_Tick(object sender, EventArgs e)
+        //{
+        //    tiempo2++;
+        //    label2.Text = tiempo2.ToString();
 
-            if ((tiempo2 + 150) % 150 == 0)
-            {
-                picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\1.png";
+        //    if (label2.Text == "200")
+        //    {
+        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\1.png";
+        //    }
 
-                if (numFrase < 4)
-                {
-                    numFrase++;
-                }
-                else
-                {
-                    numFrase = 1;
-                }
+        //    if (label2.Text == "400")
+        //    {
+        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\2.png";
+        //    }
 
-            }
+        //    if (label2.Text == "600")
+        //    {
+        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\3.png";
+        //    }
 
-        }
+        //    if (label2.Text == "800")
+        //    {
+        //        timer2.Enabled = false;
+        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\4.png";
+        //        tiempo2 = 0;
+        //        label2.Text = "0";
+        //        timer2.Start();
+
+
+        //    }
+
+        //}
+
+
+
 
 
     }

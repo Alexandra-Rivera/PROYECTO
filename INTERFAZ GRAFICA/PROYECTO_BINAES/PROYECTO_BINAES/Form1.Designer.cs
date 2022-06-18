@@ -54,7 +54,6 @@
             this.btnInicioDeSesion = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.panelNoticias = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.radImagen7 = new System.Windows.Forms.RadioButton();
             this.radImagen6 = new System.Windows.Forms.RadioButton();
@@ -69,8 +68,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.picPublicidad = new System.Windows.Forms.PictureBox();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -79,10 +76,8 @@
             this.panelMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            this.panelNoticias.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPublicidad)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -97,7 +92,6 @@
             this.panelBarraTitulo.Name = "panelBarraTitulo";
             this.panelBarraTitulo.Size = new System.Drawing.Size(1300, 38);
             this.panelBarraTitulo.TabIndex = 0;
-            this.panelBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraTitulo_Paint);
             // 
             // btnRestaurar
             // 
@@ -205,9 +199,9 @@
             this.btnRedesSociales.ForeColor = System.Drawing.Color.White;
             this.btnRedesSociales.Image = ((System.Drawing.Image)(resources.GetObject("btnRedesSociales.Image")));
             this.btnRedesSociales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRedesSociales.Location = new System.Drawing.Point(4, 522);
+            this.btnRedesSociales.Location = new System.Drawing.Point(12, 522);
             this.btnRedesSociales.Name = "btnRedesSociales";
-            this.btnRedesSociales.Size = new System.Drawing.Size(216, 32);
+            this.btnRedesSociales.Size = new System.Drawing.Size(208, 32);
             this.btnRedesSociales.TabIndex = 12;
             this.btnRedesSociales.Text = "REDES SOCIALES";
             this.btnRedesSociales.UseVisualStyleBackColor = true;
@@ -242,9 +236,9 @@
             this.btnEventos.ForeColor = System.Drawing.Color.White;
             this.btnEventos.Image = ((System.Drawing.Image)(resources.GetObject("btnEventos.Image")));
             this.btnEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEventos.Location = new System.Drawing.Point(4, 461);
+            this.btnEventos.Location = new System.Drawing.Point(12, 461);
             this.btnEventos.Name = "btnEventos";
-            this.btnEventos.Size = new System.Drawing.Size(216, 32);
+            this.btnEventos.Size = new System.Drawing.Size(208, 32);
             this.btnEventos.TabIndex = 10;
             this.btnEventos.Text = "EVENTOS";
             this.btnEventos.UseVisualStyleBackColor = true;
@@ -265,9 +259,9 @@
             this.btnAreas.ForeColor = System.Drawing.Color.White;
             this.btnAreas.Image = ((System.Drawing.Image)(resources.GetObject("btnAreas.Image")));
             this.btnAreas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAreas.Location = new System.Drawing.Point(4, 402);
+            this.btnAreas.Location = new System.Drawing.Point(12, 402);
             this.btnAreas.Name = "btnAreas";
-            this.btnAreas.Size = new System.Drawing.Size(216, 32);
+            this.btnAreas.Size = new System.Drawing.Size(208, 32);
             this.btnAreas.TabIndex = 8;
             this.btnAreas.Text = "AREAS";
             this.btnAreas.UseVisualStyleBackColor = true;
@@ -288,9 +282,9 @@
             this.btnCatalogo.ForeColor = System.Drawing.Color.White;
             this.btnCatalogo.Image = ((System.Drawing.Image)(resources.GetObject("btnCatalogo.Image")));
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCatalogo.Location = new System.Drawing.Point(4, 344);
+            this.btnCatalogo.Location = new System.Drawing.Point(12, 344);
             this.btnCatalogo.Name = "btnCatalogo";
-            this.btnCatalogo.Size = new System.Drawing.Size(216, 32);
+            this.btnCatalogo.Size = new System.Drawing.Size(208, 32);
             this.btnCatalogo.TabIndex = 6;
             this.btnCatalogo.Text = "CATALOGO";
             this.btnCatalogo.UseVisualStyleBackColor = true;
@@ -311,9 +305,9 @@
             this.btnServicios.ForeColor = System.Drawing.Color.White;
             this.btnServicios.Image = ((System.Drawing.Image)(resources.GetObject("btnServicios.Image")));
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnServicios.Location = new System.Drawing.Point(4, 286);
+            this.btnServicios.Location = new System.Drawing.Point(12, 286);
             this.btnServicios.Name = "btnServicios";
-            this.btnServicios.Size = new System.Drawing.Size(216, 32);
+            this.btnServicios.Size = new System.Drawing.Size(208, 32);
             this.btnServicios.TabIndex = 4;
             this.btnServicios.Text = "SERVICIOS";
             this.btnServicios.UseVisualStyleBackColor = true;
@@ -334,9 +328,9 @@
             this.btnNosotros.ForeColor = System.Drawing.Color.White;
             this.btnNosotros.Image = ((System.Drawing.Image)(resources.GetObject("btnNosotros.Image")));
             this.btnNosotros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNosotros.Location = new System.Drawing.Point(4, 224);
+            this.btnNosotros.Location = new System.Drawing.Point(12, 224);
             this.btnNosotros.Name = "btnNosotros";
-            this.btnNosotros.Size = new System.Drawing.Size(216, 32);
+            this.btnNosotros.Size = new System.Drawing.Size(208, 32);
             this.btnNosotros.TabIndex = 2;
             this.btnNosotros.Text = "NOSOTROS";
             this.btnNosotros.UseVisualStyleBackColor = true;
@@ -357,9 +351,9 @@
             this.btnInicioDeSesion.ForeColor = System.Drawing.Color.White;
             this.btnInicioDeSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnInicioDeSesion.Image")));
             this.btnInicioDeSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicioDeSesion.Location = new System.Drawing.Point(4, 157);
+            this.btnInicioDeSesion.Location = new System.Drawing.Point(12, 157);
             this.btnInicioDeSesion.Name = "btnInicioDeSesion";
-            this.btnInicioDeSesion.Size = new System.Drawing.Size(215, 32);
+            this.btnInicioDeSesion.Size = new System.Drawing.Size(207, 32);
             this.btnInicioDeSesion.TabIndex = 0;
             this.btnInicioDeSesion.Text = "INICIAR SESION";
             this.btnInicioDeSesion.UseVisualStyleBackColor = true;
@@ -373,12 +367,10 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
-            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.White;
-            this.panelContenedor.Controls.Add(this.panelNoticias);
             this.panelContenedor.Controls.Add(this.panel8);
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.picImagenes);
@@ -387,18 +379,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1080, 612);
             this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // panelNoticias
-            // 
-            this.panelNoticias.BackColor = System.Drawing.Color.White;
-            this.panelNoticias.Controls.Add(this.picPublicidad);
-            this.panelNoticias.Controls.Add(this.label2);
-            this.panelNoticias.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelNoticias.Location = new System.Drawing.Point(891, 0);
-            this.panelNoticias.Name = "panelNoticias";
-            this.panelNoticias.Size = new System.Drawing.Size(189, 582);
-            this.panelNoticias.TabIndex = 1;
             // 
             // panel8
             // 
@@ -411,15 +391,15 @@
             this.panel8.Controls.Add(this.radImagen2);
             this.panel8.Controls.Add(this.radImagen1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 582);
+            this.panel8.Location = new System.Drawing.Point(0, 579);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1080, 30);
+            this.panel8.Size = new System.Drawing.Size(1080, 33);
             this.panel8.TabIndex = 10;
             // 
             // radImagen7
             // 
             this.radImagen7.AutoSize = true;
-            this.radImagen7.Location = new System.Drawing.Point(559, 8);
+            this.radImagen7.Location = new System.Drawing.Point(651, 8);
             this.radImagen7.Name = "radImagen7";
             this.radImagen7.Size = new System.Drawing.Size(14, 13);
             this.radImagen7.TabIndex = 9;
@@ -429,7 +409,7 @@
             // radImagen6
             // 
             this.radImagen6.AutoSize = true;
-            this.radImagen6.Location = new System.Drawing.Point(523, 8);
+            this.radImagen6.Location = new System.Drawing.Point(615, 8);
             this.radImagen6.Name = "radImagen6";
             this.radImagen6.Size = new System.Drawing.Size(14, 13);
             this.radImagen6.TabIndex = 8;
@@ -439,7 +419,7 @@
             // radImagen5
             // 
             this.radImagen5.AutoSize = true;
-            this.radImagen5.Location = new System.Drawing.Point(484, 8);
+            this.radImagen5.Location = new System.Drawing.Point(576, 8);
             this.radImagen5.Name = "radImagen5";
             this.radImagen5.Size = new System.Drawing.Size(14, 13);
             this.radImagen5.TabIndex = 7;
@@ -449,7 +429,7 @@
             // radImagen4
             // 
             this.radImagen4.AutoSize = true;
-            this.radImagen4.Location = new System.Drawing.Point(443, 8);
+            this.radImagen4.Location = new System.Drawing.Point(535, 8);
             this.radImagen4.Name = "radImagen4";
             this.radImagen4.Size = new System.Drawing.Size(14, 13);
             this.radImagen4.TabIndex = 6;
@@ -459,7 +439,7 @@
             // radImagen3
             // 
             this.radImagen3.AutoSize = true;
-            this.radImagen3.Location = new System.Drawing.Point(403, 8);
+            this.radImagen3.Location = new System.Drawing.Point(495, 8);
             this.radImagen3.Name = "radImagen3";
             this.radImagen3.Size = new System.Drawing.Size(14, 13);
             this.radImagen3.TabIndex = 5;
@@ -469,7 +449,7 @@
             // radImagen2
             // 
             this.radImagen2.AutoSize = true;
-            this.radImagen2.Location = new System.Drawing.Point(367, 8);
+            this.radImagen2.Location = new System.Drawing.Point(459, 8);
             this.radImagen2.Name = "radImagen2";
             this.radImagen2.Size = new System.Drawing.Size(14, 13);
             this.radImagen2.TabIndex = 4;
@@ -484,7 +464,7 @@
             this.radImagen1.Checked = true;
             this.radImagen1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.radImagen1.ForeColor = System.Drawing.Color.White;
-            this.radImagen1.Location = new System.Drawing.Point(330, 8);
+            this.radImagen1.Location = new System.Drawing.Point(422, 8);
             this.radImagen1.Name = "radImagen1";
             this.radImagen1.Size = new System.Drawing.Size(14, 13);
             this.radImagen1.TabIndex = 3;
@@ -522,31 +502,6 @@
             // 
             this.tmrImagenes.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 566);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "0";
-            // 
-            // picPublicidad
-            // 
-            this.picPublicidad.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picPublicidad.Image = ((System.Drawing.Image)(resources.GetObject("picPublicidad.Image")));
-            this.picPublicidad.Location = new System.Drawing.Point(0, 0);
-            this.picPublicidad.Name = "picPublicidad";
-            this.picPublicidad.Size = new System.Drawing.Size(189, 582);
-            this.picPublicidad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPublicidad.TabIndex = 1;
-            this.picPublicidad.TabStop = false;
-
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,12 +523,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            this.panelNoticias.ResumeLayout(false);
-            this.panelNoticias.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPublicidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -604,7 +556,6 @@
         private System.Windows.Forms.Button btnServicios;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNosotros;
-        private System.Windows.Forms.Panel panelNoticias;
         private System.Windows.Forms.PictureBox picImagenes;
         private System.Windows.Forms.Timer timer1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
@@ -619,8 +570,6 @@
         private System.Windows.Forms.RadioButton radImagen1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox picPublicidad;
     }
 }
 
