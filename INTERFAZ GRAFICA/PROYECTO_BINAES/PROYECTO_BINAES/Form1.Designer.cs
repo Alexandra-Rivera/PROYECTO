@@ -67,7 +67,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -569,7 +568,6 @@
         private System.Windows.Forms.RadioButton radImagen2;
         private System.Windows.Forms.RadioButton radImagen1;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Timer timer2;
     }
 }
 
