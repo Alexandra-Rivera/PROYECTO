@@ -51,7 +51,7 @@
             this.Name = "frmInicioDeSesion";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmInicioDeSesion";
+            this.Text = "--";
             this.ResumeLayout(false);
 
         }

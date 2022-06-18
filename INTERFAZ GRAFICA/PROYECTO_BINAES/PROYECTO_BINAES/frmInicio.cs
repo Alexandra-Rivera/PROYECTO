@@ -151,7 +151,7 @@ namespace PROYECTO_BINAES
 
         private void iNICIODESESIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // this.Hide();  (para quitar el primer frm y que solo se vea el segundo)
+            //this.Hide();  //(para quitar el primer frm y que solo se vea el segundo)
             frmInicioDeSesion frm = new frmInicioDeSesion();
             frm.Show();
 
