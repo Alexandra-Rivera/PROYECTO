@@ -16,5 +16,33 @@ namespace PROYECTO_BINAES
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            
+            //Application.Exit();
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "USUARIO")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.LightGray;
+
+            }
+
+
+
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if(txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "USUARIO";
+                txtUsuario.ForeColor = Color.LightGray;
+            }
+        }
     }
 }

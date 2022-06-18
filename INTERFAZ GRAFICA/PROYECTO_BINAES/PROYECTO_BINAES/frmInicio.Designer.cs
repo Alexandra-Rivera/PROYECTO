@@ -268,17 +268,18 @@
             this.iNICIODESESIONToolStripMenuItem});
             this.mspInicioDeSesion.Location = new System.Drawing.Point(9, 165);
             this.mspInicioDeSesion.Name = "mspInicioDeSesion";
-            this.mspInicioDeSesion.Size = new System.Drawing.Size(272, 24);
+            this.mspInicioDeSesion.Size = new System.Drawing.Size(184, 29);
             this.mspInicioDeSesion.TabIndex = 12;
             this.mspInicioDeSesion.Text = "menuStrip1";
             // 
             // iNICIODESESIONToolStripMenuItem
             // 
+            this.iNICIODESESIONToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iNICIODESESIONToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.iNICIODESESIONToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("iNICIODESESIONToolStripMenuItem.Image")));
             this.iNICIODESESIONToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iNICIODESESIONToolStripMenuItem.Name = "iNICIODESESIONToolStripMenuItem";
-            this.iNICIODESESIONToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
+            this.iNICIODESESIONToolStripMenuItem.Size = new System.Drawing.Size(176, 25);
             this.iNICIODESESIONToolStripMenuItem.Text = "     INICIO DE SESION";
             this.iNICIODESESIONToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iNICIODESESIONToolStripMenuItem.Click += new System.EventHandler(this.iNICIODESESIONToolStripMenuItem_Click);
@@ -291,18 +292,19 @@
             this.nOSOTROSToolStripMenuItem});
             this.mspNosotros.Location = new System.Drawing.Point(9, 232);
             this.mspNosotros.Name = "mspNosotros";
-            this.mspNosotros.Size = new System.Drawing.Size(118, 24);
+            this.mspNosotros.Size = new System.Drawing.Size(142, 29);
             this.mspNosotros.TabIndex = 13;
             this.mspNosotros.Text = "menuStrip2";
             // 
             // nOSOTROSToolStripMenuItem
             // 
             this.nOSOTROSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.nOSOTROSToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nOSOTROSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.nOSOTROSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nOSOTROSToolStripMenuItem.Image")));
             this.nOSOTROSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.nOSOTROSToolStripMenuItem.Name = "nOSOTROSToolStripMenuItem";
-            this.nOSOTROSToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.nOSOTROSToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
             this.nOSOTROSToolStripMenuItem.Text = "     NOSOTROS";
             this.nOSOTROSToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -314,18 +316,19 @@
             this.sERVICIOSToolStripMenuItem});
             this.mspServicios.Location = new System.Drawing.Point(9, 294);
             this.mspServicios.Name = "mspServicios";
-            this.mspServicios.Size = new System.Drawing.Size(113, 24);
+            this.mspServicios.Size = new System.Drawing.Size(139, 29);
             this.mspServicios.TabIndex = 14;
             this.mspServicios.Text = "menuStrip3";
             // 
             // sERVICIOSToolStripMenuItem
             // 
             this.sERVICIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.sERVICIOSToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sERVICIOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.sERVICIOSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sERVICIOSToolStripMenuItem.Image")));
             this.sERVICIOSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sERVICIOSToolStripMenuItem.Name = "sERVICIOSToolStripMenuItem";
-            this.sERVICIOSToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.sERVICIOSToolStripMenuItem.Size = new System.Drawing.Size(131, 25);
             this.sERVICIOSToolStripMenuItem.Text = "     SERVICIOS";
             this.sERVICIOSToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -337,17 +340,18 @@
             this.cATALOGOToolStripMenuItem});
             this.mspCatalogo.Location = new System.Drawing.Point(9, 352);
             this.mspCatalogo.Name = "mspCatalogo";
-            this.mspCatalogo.Size = new System.Drawing.Size(118, 24);
+            this.mspCatalogo.Size = new System.Drawing.Size(134, 29);
             this.mspCatalogo.TabIndex = 15;
             this.mspCatalogo.Text = "menuStrip4";
             // 
             // cATALOGOToolStripMenuItem
             // 
+            this.cATALOGOToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cATALOGOToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cATALOGOToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cATALOGOToolStripMenuItem.Image")));
             this.cATALOGOToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cATALOGOToolStripMenuItem.Name = "cATALOGOToolStripMenuItem";
-            this.cATALOGOToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.cATALOGOToolStripMenuItem.Size = new System.Drawing.Size(126, 25);
             this.cATALOGOToolStripMenuItem.Text = "     CATALOGO";
             this.cATALOGOToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -357,19 +361,20 @@
             this.mspAreas.Dock = System.Windows.Forms.DockStyle.None;
             this.mspAreas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aREASToolStripMenuItem});
-            this.mspAreas.Location = new System.Drawing.Point(9, 410);
+            this.mspAreas.Location = new System.Drawing.Point(9, 405);
             this.mspAreas.Name = "mspAreas";
-            this.mspAreas.Size = new System.Drawing.Size(96, 24);
+            this.mspAreas.Size = new System.Drawing.Size(118, 29);
             this.mspAreas.TabIndex = 16;
             this.mspAreas.Text = "menuStrip5";
             // 
             // aREASToolStripMenuItem
             // 
+            this.aREASToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aREASToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.aREASToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aREASToolStripMenuItem.Image")));
             this.aREASToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aREASToolStripMenuItem.Name = "aREASToolStripMenuItem";
-            this.aREASToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.aREASToolStripMenuItem.Size = new System.Drawing.Size(110, 25);
             this.aREASToolStripMenuItem.Text = "     AREAS ";
             this.aREASToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -381,17 +386,18 @@
             this.eVENTOSToolStripMenuItem});
             this.mspEventos.Location = new System.Drawing.Point(9, 469);
             this.mspEventos.Name = "mspEventos";
-            this.mspEventos.Size = new System.Drawing.Size(106, 24);
+            this.mspEventos.Size = new System.Drawing.Size(129, 29);
             this.mspEventos.TabIndex = 17;
             this.mspEventos.Text = "menuStrip6";
             // 
             // eVENTOSToolStripMenuItem
             // 
+            this.eVENTOSToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eVENTOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eVENTOSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eVENTOSToolStripMenuItem.Image")));
             this.eVENTOSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.eVENTOSToolStripMenuItem.Name = "eVENTOSToolStripMenuItem";
-            this.eVENTOSToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.eVENTOSToolStripMenuItem.Size = new System.Drawing.Size(121, 25);
             this.eVENTOSToolStripMenuItem.Text = "     EVENTOS";
             this.eVENTOSToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -403,17 +409,18 @@
             this.rEDESSOCIALESToolStripMenuItem});
             this.mspRedesSociales.Location = new System.Drawing.Point(9, 530);
             this.mspRedesSociales.Name = "mspRedesSociales";
-            this.mspRedesSociales.Size = new System.Drawing.Size(146, 24);
+            this.mspRedesSociales.Size = new System.Drawing.Size(173, 29);
             this.mspRedesSociales.TabIndex = 18;
             this.mspRedesSociales.Text = "menuStrip7";
             // 
             // rEDESSOCIALESToolStripMenuItem
             // 
+            this.rEDESSOCIALESToolStripMenuItem.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rEDESSOCIALESToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rEDESSOCIALESToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rEDESSOCIALESToolStripMenuItem.Image")));
             this.rEDESSOCIALESToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rEDESSOCIALESToolStripMenuItem.Name = "rEDESSOCIALESToolStripMenuItem";
-            this.rEDESSOCIALESToolStripMenuItem.Size = new System.Drawing.Size(138, 20);
+            this.rEDESSOCIALESToolStripMenuItem.Size = new System.Drawing.Size(165, 25);
             this.rEDESSOCIALESToolStripMenuItem.Text = "     REDES SOCIALES";
             this.rEDESSOCIALESToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
