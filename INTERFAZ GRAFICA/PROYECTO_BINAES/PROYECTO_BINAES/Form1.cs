@@ -150,6 +150,8 @@ namespace PROYECTO_BINAES
         }
 
 
+
+
         //PUBLICIDAD
         //private void timer2_Tick(object sender, EventArgs e)
         //{
