@@ -70,6 +70,7 @@
             this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.picPublicidad = new System.Windows.Forms.PictureBox();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -81,6 +82,7 @@
             this.panelNoticias.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPublicidad)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -390,6 +392,7 @@
             // panelNoticias
             // 
             this.panelNoticias.BackColor = System.Drawing.Color.White;
+            this.panelNoticias.Controls.Add(this.picPublicidad);
             this.panelNoticias.Controls.Add(this.label2);
             this.panelNoticias.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNoticias.Location = new System.Drawing.Point(891, 0);
@@ -532,6 +535,18 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "0";
             // 
+            // picPublicidad
+            // 
+            this.picPublicidad.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picPublicidad.Image = ((System.Drawing.Image)(resources.GetObject("picPublicidad.Image")));
+            this.picPublicidad.Location = new System.Drawing.Point(0, 0);
+            this.picPublicidad.Name = "picPublicidad";
+            this.picPublicidad.Size = new System.Drawing.Size(189, 582);
+            this.picPublicidad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPublicidad.TabIndex = 1;
+            this.picPublicidad.TabStop = false;
+
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,6 +573,7 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPublicidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -604,6 +620,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picPublicidad;
     }
 }
 
