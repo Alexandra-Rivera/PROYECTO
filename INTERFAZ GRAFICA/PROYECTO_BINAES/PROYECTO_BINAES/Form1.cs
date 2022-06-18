@@ -14,6 +14,8 @@ namespace PROYECTO_BINAES
     {
         private int tiempo = -1; //variable de conteo de valores
         private int numImagen = 0;
+        private int tiempo2 = -1;
+        private int numFrase = 0;
         public frmInicio()
         {
             InitializeComponent();
@@ -23,6 +25,8 @@ namespace PROYECTO_BINAES
         private void frmInicio_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            timer2.Start();
+          
             
         }
 
@@ -69,22 +73,22 @@ namespace PROYECTO_BINAES
         private void timer1_Tick(object sender, EventArgs e)
         {
             tiempo++;
-            label1.Text = tiempo.ToString() +"/"+ numImagen.ToString();
+            label1.Text = tiempo2.ToString() +"/"+ numFrase.ToString();
 
 
 
-            if ((tiempo+100)%100==0)
+            if ((tiempo2+100)%100==0)
             {
                
-                if (numImagen<7)
+                if (numFrase<4)
                 {
-                    numImagen++;
+                    numFrase++;
                 }
                 else
                 {
-                    numImagen = 1;
+                    numFrase = 1;
                 }
-                this.CheckBot(numImagen);
+                //this.CheckBot(numFrase);
 
             }
 
@@ -152,6 +156,27 @@ namespace PROYECTO_BINAES
             tiempo = 0;
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            tiempo2++;
+            label2.Text = tiempo2.ToString() + "/" + numFrase.ToString();
 
+            if ((tiempo2 + 150) % 150 == 0)
+            {
+                picImagenes.ImageLocation = Application.StartupPath + "\\IMAGENES\\1.png";
+
+                if (numFrase < 7)
+                {
+                    numFrase++;
+                }
+                else
+                {
+                    numFrase = 1;
+                }
+                //this.CheckBot(numImagen);
+
+            }
+
+        }
     }
 }

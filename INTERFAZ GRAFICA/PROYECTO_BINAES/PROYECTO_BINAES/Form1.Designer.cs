@@ -54,6 +54,8 @@
             this.btnInicioDeSesion = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.panelNoticias = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.radImagen7 = new System.Windows.Forms.RadioButton();
             this.radImagen6 = new System.Windows.Forms.RadioButton();
             this.radImagen5 = new System.Windows.Forms.RadioButton();
@@ -62,12 +64,12 @@
             this.radImagen2 = new System.Windows.Forms.RadioButton();
             this.radImagen1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelNoticias = new System.Windows.Forms.Panel();
             this.picImagenes = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tmrImagenes = new System.Windows.Forms.Timer(this.components);
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -76,8 +78,9 @@
             this.panelMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
+            this.panelNoticias.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -100,7 +103,7 @@
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.ErrorImage = null;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1232, 7);
+            this.btnRestaurar.Location = new System.Drawing.Point(1239, 6);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +118,7 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.ErrorImage = null;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1201, 7);
+            this.btnMinimizar.Location = new System.Drawing.Point(1208, 6);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +131,7 @@
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.ErrorImage = null;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1232, 7);
+            this.btnMaximizar.Location = new System.Drawing.Point(1239, 6);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +145,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.ErrorImage = null;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1263, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(1270, 6);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(25, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -384,6 +387,32 @@
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+            // panelNoticias
+            // 
+            this.panelNoticias.BackColor = System.Drawing.Color.White;
+            this.panelNoticias.Controls.Add(this.label2);
+            this.panelNoticias.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNoticias.Location = new System.Drawing.Point(891, 0);
+            this.panelNoticias.Name = "panelNoticias";
+            this.panelNoticias.Size = new System.Drawing.Size(189, 582);
+            this.panelNoticias.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel8.Controls.Add(this.radImagen7);
+            this.panel8.Controls.Add(this.radImagen6);
+            this.panel8.Controls.Add(this.radImagen5);
+            this.panel8.Controls.Add(this.radImagen4);
+            this.panel8.Controls.Add(this.radImagen3);
+            this.panel8.Controls.Add(this.radImagen2);
+            this.panel8.Controls.Add(this.radImagen1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 582);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1080, 30);
+            this.panel8.TabIndex = 10;
+            // 
             // radImagen7
             // 
             this.radImagen7.AutoSize = true;
@@ -470,15 +499,6 @@
             this.label1.Text = "0";
             this.label1.Visible = false;
             // 
-            // panelNoticias
-            // 
-            this.panelNoticias.BackColor = System.Drawing.Color.White;
-            this.panelNoticias.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelNoticias.Location = new System.Drawing.Point(907, 0);
-            this.panelNoticias.Name = "panelNoticias";
-            this.panelNoticias.Size = new System.Drawing.Size(173, 582);
-            this.panelNoticias.TabIndex = 1;
-            // 
             // picImagenes
             // 
             this.picImagenes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -499,21 +519,18 @@
             // 
             this.tmrImagenes.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel8
+            // timer2
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panel8.Controls.Add(this.radImagen7);
-            this.panel8.Controls.Add(this.radImagen6);
-            this.panel8.Controls.Add(this.radImagen5);
-            this.panel8.Controls.Add(this.radImagen4);
-            this.panel8.Controls.Add(this.radImagen3);
-            this.panel8.Controls.Add(this.radImagen2);
-            this.panel8.Controls.Add(this.radImagen1);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 582);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1080, 30);
-            this.panel8.TabIndex = 10;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(173, 566);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "0";
             // 
             // frmInicio
             // 
@@ -536,9 +553,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
+            this.panelNoticias.ResumeLayout(false);
+            this.panelNoticias.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -583,6 +602,8 @@
         private System.Windows.Forms.RadioButton radImagen2;
         private System.Windows.Forms.RadioButton radImagen1;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label2;
     }
 }
 
