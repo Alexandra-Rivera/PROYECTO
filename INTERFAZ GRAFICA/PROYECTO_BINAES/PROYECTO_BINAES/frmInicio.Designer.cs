@@ -292,7 +292,7 @@
             this.nOSOTROSToolStripMenuItem});
             this.mspNosotros.Location = new System.Drawing.Point(9, 232);
             this.mspNosotros.Name = "mspNosotros";
-            this.mspNosotros.Size = new System.Drawing.Size(262, 29);
+            this.mspNosotros.Size = new System.Drawing.Size(142, 29);
             this.mspNosotros.TabIndex = 13;
             this.mspNosotros.Text = "menuStrip2";
             // 

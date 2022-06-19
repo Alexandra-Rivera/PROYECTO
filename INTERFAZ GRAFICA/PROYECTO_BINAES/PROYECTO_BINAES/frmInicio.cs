@@ -180,48 +180,8 @@ namespace PROYECTO_BINAES
         }
 
 
-
-
-
-
-
-
-        //PUBLICIDAD
-        //private void timer2_Tick(object sender, EventArgs e)
-        //{
-        //    tiempo2++;
-        //    label2.Text = tiempo2.ToString();
-
-        //    if (label2.Text == "200")
-        //    {
-        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\1.png";
-        //    }
-
-        //    if (label2.Text == "400")
-        //    {
-        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\2.png";
-        //    }
-
-        //    if (label2.Text == "600")
-        //    {
-        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\3.png";
-        //    }
-
-        //    if (label2.Text == "800")
-        //    {
-        //        timer2.Enabled = false;
-        //        picPublicidad.ImageLocation = Application.StartupPath + "\\IMAGENES\\4.png";
-        //        tiempo2 = 0;
-        //        label2.Text = "0";
-        //        timer2.Start();
-
-
-        //    }
-
-        //}
-
-
-
+        
+        
 
 
     }

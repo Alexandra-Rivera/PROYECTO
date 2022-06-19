@@ -37,7 +37,7 @@ namespace PROYECTO_BINAES
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Dispose();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -49,13 +49,13 @@ namespace PROYECTO_BINAES
         {
             this.WindowState = FormWindowState.Normal;
             btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            btnMaximizaar.Visible = true;
         }
 
         private void btnMaximizaar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
+            btnMaximizaar.Visible = false;
             btnRestaurar.Visible = true;
         }
     }

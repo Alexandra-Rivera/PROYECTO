@@ -57,10 +57,12 @@
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaximizaar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.mspAtras = new System.Windows.Forms.MenuStrip();
+            this.aTRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.mspInicioDeSesion.SuspendLayout();
@@ -74,14 +76,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizaar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelContenedor.SuspendLayout();
+            this.mspAtras.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuVertical
             // 
             this.panelMenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panelMenuVertical.Controls.Add(this.panel8);
+            this.panelMenuVertical.Controls.Add(this.mspAtras);
             this.panelMenuVertical.Controls.Add(this.panel7);
             this.panelMenuVertical.Controls.Add(this.panel6);
             this.panelMenuVertical.Controls.Add(this.panel5);
@@ -101,13 +105,13 @@
             this.panelMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuVertical.Location = new System.Drawing.Point(0, 38);
             this.panelMenuVertical.Name = "panelMenuVertical";
-            this.panelMenuVertical.Size = new System.Drawing.Size(220, 535);
+            this.panelMenuVertical.Size = new System.Drawing.Size(220, 612);
             this.panelMenuVertical.TabIndex = 3;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(1, 522);
+            this.panel7.Location = new System.Drawing.Point(1, 494);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(5, 32);
             this.panel7.TabIndex = 10;
@@ -123,7 +127,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(1, 461);
+            this.panel5.Location = new System.Drawing.Point(1, 433);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 32);
             this.panel5.TabIndex = 9;
@@ -131,7 +135,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(1, 402);
+            this.panel4.Location = new System.Drawing.Point(1, 374);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 32);
             this.panel4.TabIndex = 7;
@@ -139,7 +143,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(1, 344);
+            this.panel3.Location = new System.Drawing.Point(1, 316);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 5;
@@ -147,7 +151,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 286);
+            this.panel2.Location = new System.Drawing.Point(0, 258);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 32);
             this.panel2.TabIndex = 3;
@@ -155,7 +159,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(0, 224);
+            this.panel1.Location = new System.Drawing.Point(0, 196);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 32);
             this.panel1.TabIndex = 1;
@@ -163,7 +167,7 @@
             // panelDecoracionMenu
             // 
             this.panelDecoracionMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panelDecoracionMenu.Location = new System.Drawing.Point(-5, 157);
+            this.panelDecoracionMenu.Location = new System.Drawing.Point(-5, 129);
             this.panelDecoracionMenu.Name = "panelDecoracionMenu";
             this.panelDecoracionMenu.Size = new System.Drawing.Size(10, 32);
             this.panelDecoracionMenu.TabIndex = 0;
@@ -184,7 +188,7 @@
             this.mspInicioDeSesion.Dock = System.Windows.Forms.DockStyle.None;
             this.mspInicioDeSesion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNICIODESESIONToolStripMenuItem});
-            this.mspInicioDeSesion.Location = new System.Drawing.Point(9, 165);
+            this.mspInicioDeSesion.Location = new System.Drawing.Point(9, 137);
             this.mspInicioDeSesion.Name = "mspInicioDeSesion";
             this.mspInicioDeSesion.Size = new System.Drawing.Size(184, 29);
             this.mspInicioDeSesion.TabIndex = 12;
@@ -207,7 +211,7 @@
             this.mspNosotros.Dock = System.Windows.Forms.DockStyle.None;
             this.mspNosotros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nOSOTROSToolStripMenuItem});
-            this.mspNosotros.Location = new System.Drawing.Point(9, 232);
+            this.mspNosotros.Location = new System.Drawing.Point(9, 204);
             this.mspNosotros.Name = "mspNosotros";
             this.mspNosotros.Size = new System.Drawing.Size(142, 29);
             this.mspNosotros.TabIndex = 13;
@@ -231,7 +235,7 @@
             this.mspServicios.Dock = System.Windows.Forms.DockStyle.None;
             this.mspServicios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sERVICIOSToolStripMenuItem});
-            this.mspServicios.Location = new System.Drawing.Point(9, 294);
+            this.mspServicios.Location = new System.Drawing.Point(9, 266);
             this.mspServicios.Name = "mspServicios";
             this.mspServicios.Size = new System.Drawing.Size(139, 29);
             this.mspServicios.TabIndex = 14;
@@ -255,7 +259,7 @@
             this.mspCatalogo.Dock = System.Windows.Forms.DockStyle.None;
             this.mspCatalogo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cATALOGOToolStripMenuItem});
-            this.mspCatalogo.Location = new System.Drawing.Point(9, 352);
+            this.mspCatalogo.Location = new System.Drawing.Point(9, 324);
             this.mspCatalogo.Name = "mspCatalogo";
             this.mspCatalogo.Size = new System.Drawing.Size(134, 29);
             this.mspCatalogo.TabIndex = 15;
@@ -278,7 +282,7 @@
             this.mspAreas.Dock = System.Windows.Forms.DockStyle.None;
             this.mspAreas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aREASToolStripMenuItem});
-            this.mspAreas.Location = new System.Drawing.Point(9, 405);
+            this.mspAreas.Location = new System.Drawing.Point(9, 377);
             this.mspAreas.Name = "mspAreas";
             this.mspAreas.Size = new System.Drawing.Size(118, 29);
             this.mspAreas.TabIndex = 16;
@@ -301,7 +305,7 @@
             this.mspEventos.Dock = System.Windows.Forms.DockStyle.None;
             this.mspEventos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eVENTOSToolStripMenuItem});
-            this.mspEventos.Location = new System.Drawing.Point(9, 469);
+            this.mspEventos.Location = new System.Drawing.Point(9, 441);
             this.mspEventos.Name = "mspEventos";
             this.mspEventos.Size = new System.Drawing.Size(129, 29);
             this.mspEventos.TabIndex = 17;
@@ -324,7 +328,7 @@
             this.mspRedesSociales.Dock = System.Windows.Forms.DockStyle.None;
             this.mspRedesSociales.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rEDESSOCIALESToolStripMenuItem});
-            this.mspRedesSociales.Location = new System.Drawing.Point(9, 530);
+            this.mspRedesSociales.Location = new System.Drawing.Point(9, 502);
             this.mspRedesSociales.Name = "mspRedesSociales";
             this.mspRedesSociales.Size = new System.Drawing.Size(173, 29);
             this.mspRedesSociales.TabIndex = 18;
@@ -347,12 +351,11 @@
             this.panelBarraTitulo.Controls.Add(this.btnRestaurar);
             this.panelBarraTitulo.Controls.Add(this.btnMaximizaar);
             this.panelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.panelBarraTitulo.Controls.Add(this.btnMaximizar);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1064, 38);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1300, 38);
             this.panelBarraTitulo.TabIndex = 2;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
@@ -362,13 +365,12 @@
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.ErrorImage = null;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(996, 6);
+            this.btnRestaurar.Location = new System.Drawing.Point(1232, 7);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // btnMaximizaar
@@ -376,7 +378,7 @@
             this.btnMaximizaar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizaar.ErrorImage = null;
             this.btnMaximizaar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizaar.Image")));
-            this.btnMaximizaar.Location = new System.Drawing.Point(996, 7);
+            this.btnMaximizaar.Location = new System.Drawing.Point(1232, 6);
             this.btnMaximizaar.Name = "btnMaximizaar";
             this.btnMaximizaar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizaar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -391,7 +393,7 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.ErrorImage = null;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(965, 6);
+            this.btnMinimizar.Location = new System.Drawing.Point(1201, 6);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -399,25 +401,13 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.ErrorImage = null;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1239, 6);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.ErrorImage = null;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1027, 6);
+            this.btnCerrar.Location = new System.Drawing.Point(1263, 6);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(25, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -432,7 +422,7 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(220, 38);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(844, 535);
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 612);
             this.panelContenedor.TabIndex = 4;
             // 
             // label1
@@ -445,17 +435,48 @@
             this.label1.Text = "0";
             this.label1.Visible = false;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel8.Location = new System.Drawing.Point(0, 553);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(5, 32);
+            this.panel8.TabIndex = 11;
+            // 
+            // mspAtras
+            // 
+            this.mspAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.mspAtras.Dock = System.Windows.Forms.DockStyle.None;
+            this.mspAtras.Font = new System.Drawing.Font("Snowy Night", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mspAtras.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aTRASToolStripMenuItem});
+            this.mspAtras.Location = new System.Drawing.Point(54, 553);
+            this.mspAtras.Name = "mspAtras";
+            this.mspAtras.Size = new System.Drawing.Size(186, 29);
+            this.mspAtras.TabIndex = 3;
+            this.mspAtras.Text = "ATRAS";
+            // 
+            // aTRASToolStripMenuItem
+            // 
+            this.aTRASToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.aTRASToolStripMenuItem.Name = "aTRASToolStripMenuItem";
+            this.aTRASToolStripMenuItem.Size = new System.Drawing.Size(58, 25);
+            this.aTRASToolStripMenuItem.Text = "ATRAS";
+            this.aTRASToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // frmNosotros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 573);
+            this.ClientSize = new System.Drawing.Size(1300, 650);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelMenuVertical);
             this.Controls.Add(this.panelBarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.mspAtras;
             this.Name = "frmNosotros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNosotros";
             this.Load += new System.EventHandler(this.frmNosotros_Load);
             this.panelMenuVertical.ResumeLayout(false);
@@ -479,10 +500,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizaar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
+            this.mspAtras.ResumeLayout(false);
+            this.mspAtras.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -515,11 +537,13 @@
         private System.Windows.Forms.ToolStripMenuItem rEDESSOCIALESToolStripMenuItem;
         private System.Windows.Forms.Panel panelBarraTitulo;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.PictureBox btnMaximizaar;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.MenuStrip mspAtras;
+        private System.Windows.Forms.ToolStripMenuItem aTRASToolStripMenuItem;
     }
 }
