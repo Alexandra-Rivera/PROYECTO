@@ -155,6 +155,7 @@ namespace PROYECTO_BINAES
             tiempo = 0;
         }
 
+        //LINK INICIO DE SESION
         private void iNICIODESESIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //this.Hide();  //(para quitar el primer frm y que solo se vea el segundo)
@@ -164,11 +165,21 @@ namespace PROYECTO_BINAES
 
         }
 
+        //LINK NOSOTROS
+        private void nOSOTROSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNosotros frm = new frmNosotros();
+            frm.Show();
+        }
+
+        //MOVER LA PESTANIA
         private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
         }
+
+
 
 
 
