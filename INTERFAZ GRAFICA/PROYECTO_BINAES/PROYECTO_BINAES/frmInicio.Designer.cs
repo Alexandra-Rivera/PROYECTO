@@ -568,6 +568,7 @@
             this.Controls.Add(this.panelMenuVertical);
             this.Controls.Add(this.panelBarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mspInicioDeSesion;
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
