@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices; //pa mover la pestania
 
 namespace PROYECTO_BINAES
 {
@@ -17,9 +18,15 @@ namespace PROYECTO_BINAES
             InitializeComponent();
         }
 
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMenssage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            
+            this.Dispose();
+
             //Application.Exit();
         }
 
@@ -43,6 +50,37 @@ namespace PROYECTO_BINAES
                 txtUsuario.Text = "USUARIO";
                 txtUsuario.ForeColor = Color.LightGray;
             }
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (txtContrasena.Text == "CONTRASEÑA")
+            {
+                txtContrasena.Text = "";
+                txtContrasena.ForeColor = Color.LightGray;
+                txtContrasena.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtContrasena_Leave(object sender, EventArgs e)
+        {
+            if (txtContrasena.Text == "")
+            {
+                txtContrasena.Text = "CONTRASEÑA";
+                txtContrasena.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void frmInicioDeSesion_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMenssage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMenssage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

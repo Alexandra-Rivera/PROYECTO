@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices; //pa mover la pestania
 
 namespace PROYECTO_BINAES
 {
@@ -22,6 +23,11 @@ namespace PROYECTO_BINAES
             InitializeComponent();
 
         }
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMenssage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
 
         private void frmInicio_Load(object sender, EventArgs e)
         {
@@ -157,6 +163,14 @@ namespace PROYECTO_BINAES
 
 
         }
+
+        private void panelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMenssage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
 
 
 
